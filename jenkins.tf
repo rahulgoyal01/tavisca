@@ -45,9 +45,7 @@ resource "aws_security_group" "jenkinsSG" {
 resource "aws_key_pair" "ubuntu" {
   key_name = "DevTrain"
   public_key = file("./DevTrain.pub")
- // public_key = "AAAAB3NzaC1yc2EAAAADAQABAAABAQCAhm4xEJaljfem6diXO1wRMjyuh0tXM26if7umEFk/FwF0huh3yq69Sjtu0QLH1zQGzxgHZ6TNX7IJ5iVTq7t+eipA4oPFU7wr HQYvdV49yp4HuWVjg4t6YPnu5Efcbw40ZY/SyS48SIKI9EFELj0YtX60dyRPDE7GVFHHLsh+UxRQ+4JaEDhMaSK97pb39NBdGPERShvnazHrrm2ivIPWrCJmdypFu+MaZvm3HSRooRoiQtptoj+WjvisM0KJHHqrGHXaLYRTMkGEZGcs+UjwN596ELRTsZRZTZ07wm8HrKYh3hhN/UtOxeeBBYvO6jqvMk+JrNNuouk74fTqEILv"
-
-}
+ }
 
 
 resource "aws_subnet" "ap-southeast-1a-public" {
